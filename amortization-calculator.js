@@ -5,15 +5,7 @@
 // R - interest rate in years
 // N - number of years
 function calculateAmountPerPeriod(P, R, N) {        
-    let r = (R/100)/12; 
-    let n = N*12;
-    console.log(`r is ${r}, n is ${n} and P is ${P}`);
-     let numerator = r * Math.pow((1+r),n);
-     let denominator = Math.pow((1+r),n) -1;
-     let amount = P * (numerator/denominator);
-     console.log(`amount is ${amount}`);
-     return amount;
-    
+ return 0;   
 }
 
 var P = 20000;
