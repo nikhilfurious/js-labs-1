@@ -15,6 +15,8 @@ function calculateAmountPerPeriod(P, R, N) {
      return amount;   
 }
 
+
+
 var P = 20000;
 var R= 7.5;
 var N = 5;
@@ -27,4 +29,15 @@ function calculate() {
     var finalAmount = document.getElementById("finalAmount");
     var amoutPerPeriod = calculateAmountPerPeriod(P, R, N);
     finalAmount.innerText = amoutPerPeriod.toFixed(2);
+}
+
+function validateAllrequiredFields(){
+    var P = document.getElementById("P").value;
+    var R= document.getElementById("R").value;
+    var N = document.getElementById("N").value;
+    var calculateBtn = document.getElementById("calculateBtn");
+    var isAllFieldsEmpty = P === "" && R === "" && N === "";
+    if (!isAllFieldsEmpty){
+        calculateBtn.removeAttribute("disabled");
+    }
 }
