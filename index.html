@@ -57,16 +57,16 @@
                         <label for="" class="text-info">All fields are required.</label>
                         <div class="form-group" >
                           <label for="P">Principle <span>*</span></label>
-                          <input type="number"  class="form-control" id="P" >
+                          <input type="number" onblur="validateAllrequiredFields()"  class="form-control" id="P" >
                           <div ></div>
                         </div>
                         <div class="form-group">
                           <label for="R">Annual interest rate <span>*</span></label>
-                          <input type="number" class="form-control" id="R">
+                          <input type="number" onblur="validateAllrequiredFields()" class="form-control" id="R">
                         </div>
                         <div class="form-group" >
                             <label for="exampleInputEmail1">Years to grow <span>*</span></label>
-                            <input type="number"  class="form-control" id="N" >
+                            <input type="number" onblur="validateAllrequiredFields()"  class="form-control" id="N" >
                           </div>
                         <button type="button" id="calculateBtn" disabled class="btn btn-primary" onclick="calculate()">Calculate</button>
                         <div id="requiredError" class="text-danger ">Enter values for required fields</div>

@@ -23,3 +23,4 @@
 ## What is JSON?
 ## What is the difference between null and undefined?
 ## What is regex? What is it used for?
+## What is the difference between function and method?
