@@ -1,8 +1,9 @@
 # Javascript FAQs
 
+## What are the different data types in JS?
 ## How many ways a function can be created?
-## What is global variable
-## What is 'use strict'
+## What is global variable?
+## What is 'use strict'?
 ## What is global object? Name some of those?
 ## What is DOM?
 ## What is scope?
@@ -17,4 +18,8 @@
 ## Name some design patterns in JavaScript?
 ## What is a closure?
 ## What is prototype?
-
+## What are the different selectors in DOM?  
+## What is an object? How many ways it can be created?
+## What is JSON?
+## What is the difference between null and undefined?
+## What is regex? What is it used for?
