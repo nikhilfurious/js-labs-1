@@ -1,0 +1,58 @@
+<html>
+<head>
+
+
+</head>
+<body>
+<div class="gadget" style="max-width:450px;">
+<div class="gadget-header;align:center;">
+<div class="gadget-calculator; align:center;">
+<form id="a1_form" action="#">
+<div style="background-color:#3b4e87;">
+<h3 id="head" style="color:white; text-align:center;">Amortization Payment Calculator</h3>
+<div style="background-color:#e5e5e5;">
+<table>
+<tbody><tr>
+    <td style="text-align:right">Loan Amount, 
+    <b><i>P</i></b>
+    </td>
+    <td style="text-align:left">
+    <input type="number" id="P" size="12" value="20000.00" class="inputField">
+    </td>
+</tr>
+<tr>
+    <td style="text-align:right">Interest Rate, 
+    <b><i>r</i></b>
+    </td>
+    <td style="text-align:left">
+    <input type="number" id="R" size="12" value="0.00625" class="inputField"> 
+    0.01 = 1%
+    </td>
+</tr>
+<tr>
+    <td style="text-align:right">Number of Payments, 
+    <b><i>n</i></b>
+    </td>
+    <td style="text-align:left">
+    <input type="number" id="N" size="8" value="60" class="inputField"></td>
+</tr>
+<tr>
+    <td colspan="2" class="center">
+    <input onClick="amort_calc" type="button" id="button" value="Calculate">
+    </td>
+</tr>
+<tr>
+    <td style="text-align:right">Payment Amount, 
+    <b><i>A</i></b>
+    </td>
+    <td style="text-align:left">
+    <input style="color:#006600" type="text" id="A" readonly="" class="outputField" size="12" value="" > 
+    </td>
+</tr>
+</tbody></table>
+</form>
+</div>
+</div>
+<script type="text/javascript" src="head.js"></script>
+</body>
+</html>
