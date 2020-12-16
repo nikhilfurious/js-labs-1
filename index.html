@@ -6,40 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <script src="./loose-vs-strict.js"></script>
-    <script src="./file1.js"></script>
-    <script src="./compound-interest.js"></script>
-    <script>
-//        getName();
-    </script>
+    <!-- <meta name="generator" content="Jekyll v4.1.1">
+    <script src="./scripts/loose-vs-strict.js"></script>
+    <script src="./scripts/compound-interest.js"></script> -->
+    
+    <script src="./scripts/amortization-calculator.js"></script>
+  
     <title>JS Labs</title>
 
     
 
-    <!-- Bootstrap core CSS -->
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    Custom styles for this template
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-        
+    <link rel="stylesheet" href="./styles/style.css">    
 
 </head>
 
@@ -74,19 +54,22 @@
               <div class="row">
                   <div class="col-6">
                     <form action="" method="POST" >
+                        <label for="" class="text-info">All fields are required.</label>
                         <div class="form-group" >
-                          <label for="exampleInputEmail1">Principle</label>
-                          <input type="number"  class="form-control" id="p" aria-describedby="emailHelp">
+                          <label for="P">Principle <span>*</span></label>
+                          <input type="number" onblur="validateAllrequiredFields()"  class="form-control" id="P" >
+                          <div ></div>
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Annual interest rate</label>
-                          <input type="number" class="form-control" id="r">
+                          <label for="R">Annual interest rate <span>*</span></label>
+                          <input type="number" onblur="validateAllrequiredFields()" class="form-control" id="R">
                         </div>
                         <div class="form-group" >
-                            <label for="exampleInputEmail1">Years to grow</label>
-                            <input type="number"  class="form-control" id="t" aria-describedby="emailHelp">
+                            <label for="exampleInputEmail1">Years to grow <span>*</span></label>
+                            <input type="number" onblur="validateAllrequiredFields()"  class="form-control" id="N" >
                           </div>
-                        <button type="button" class="btn btn-primary" onclick="calculateFinalAmount()">Calculate</button>
+                        <button type="button" id="calculateBtn" disabled class="btn btn-primary" onclick="calculate()">Calculate</button>
+                        <div id="requiredError" class="text-danger ">Enter values for required fields</div>
                       </form>
                       <div class="well" id="finalAmount">
 
