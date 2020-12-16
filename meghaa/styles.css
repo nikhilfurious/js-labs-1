@@ -1,0 +1,33 @@
+span{
+    font-style: italic;font-weight: 700;
+}
+body{
+  align-items: center;
+  padding-top: 170px;
+}
+input {
+    border: 2px solid;
+    border-radius: 4px;
+    height:40px;
+    width:150px;
+    padding-top: 5px;
+    color:rgb(67, 67, 148);
+    border-color:black;
+    display: inline-block;
+    }
+  }
+  input[type=button]{
+    text-align: center;
+    width: auto;
+    margin: 10px;
+      
+  }
+  #paymentAmount{
+    border-width:2px;
+    border-style: solid black;
+  }
+  button[id="paymentAmount"] {
+    height:40px;
+    width:150px;
+  }
+  
