@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "db demo",
+      "author": "kumanan",
+      "id": 2
+    },
+    {
+      "title": "class3",
+      "author": "Vignesh",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

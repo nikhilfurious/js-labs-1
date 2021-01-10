@@ -24,3 +24,10 @@
 ## What is the difference between null and undefined?
 ## What is regex? What is it used for?
 ## What is the difference between function and method?
+## What is Azure Subscription?
+A subscription is an agreement with Microsoft to use one or more Microsoft cloud platforms or services, for which charges accrue based on either a per-user license fee or on cloud-based resource consumption.
+
+- Microsoft's Software as a Service (SaaS)-based cloud offerings (Microsoft 365 and Dynamics 365) charge per-user license fees.
+- Microsoft's Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) cloud offerings (Azure) charge based on cloud resource consumption.
+
+## What is a Resource group?
